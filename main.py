@@ -1,6 +1,6 @@
 from window import Window
 from points import Line, Point
-from cell import Cell
+from cells import Cell, Maze
 
 def main():
     win = Window(800,600)
@@ -19,6 +19,8 @@ def main():
     cell_3.draw()
     cell_1.draw_move(cell_2)
     cell_3.draw_move(cell_2, True)
+
+    maze = Maze(200,200,10,10,10,10,win)
 
     win.wait_for_close()
 
