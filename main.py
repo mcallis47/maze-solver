@@ -21,7 +21,7 @@ def main():
     cell_3.draw_move(cell_2, True)
 
     maze = Maze(200,200,10,10,10,10,win)
-
+    maze.solve()
     win.wait_for_close()
 
 
